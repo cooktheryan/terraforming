@@ -17,7 +17,7 @@ provider "aws" {
 }
 resource "aws_instance" "app_server" {
   ami           = data.aws_ami.ubuntu.id
-  instance_type = "t19.medium"
+  instance_type = "t8.medium"
   key_name      = "rcook"
 tags = {
     Name = "wiggles" 
